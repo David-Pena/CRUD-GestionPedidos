@@ -659,16 +659,21 @@
                     <asp:View ID="VistaFacturar" runat="server">
                         <div class="row mb-3">
                             <div class="col-12 col-lg-12">
-                                <span class="blockquote text-primary">Visualizacion de Factura x Cliente</span>
+                                <span class="blockquote text-primary">Visualizacion de Factura x Estado</span>
                             </div>
                             <div class="col-12 col-lg-12">
-                                <span class="blockquote-footer">Por favor, seleccione un cliente para mostrar todas sus facturas relacionadas</span>
+                                <span class="blockquote-footer">Por favor, seleccione un estado para mostrar todas las facturas que se encuentren en el estado seleccionado</span>
                             </div>
-                            <div class="col-12 col-lg-12 mt-3">
+                            <div class="col-12 col-lg-6 mt-3">
                                 <div class="btn-group">
-                                    <asp:DropDownList ID="ddlFiltrarCliente" runat="server" DataSourceID="SqlDataSource9" DataTextField="Nombre" DataValueField="Nombre" CssClass="form-control" AutoPostBack="True"></asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Nombre] FROM [Cliente]"></asp:SqlDataSource>
-                                    <asp:Button ID="btnFiltrarFactura" runat="server" OnClick="btnFiltrarFactura_Click" Text="Filtrar" CssClass="btn btn-primary" />
+                                    <asp:DropDownList ID="ddlFiltrarEstado" runat="server" CssClass="form-control">
+                                        <asp:ListItem>Pendiente</asp:ListItem>
+                                        <asp:ListItem>Pagado</asp:ListItem>
+                                        <asp:ListItem>Procesado</asp:ListItem>
+                                        <asp:ListItem>Enviado</asp:ListItem>
+                                        <asp:ListItem>Entregado</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:Button ID="btnFiltrarFacturaXEstado" runat="server" OnClick="btnFiltrarFacturaXEstado_Click" Text="Filtrar" CssClass="btn btn-primary" />
                                 </div> 
                             </div>
                         </div>

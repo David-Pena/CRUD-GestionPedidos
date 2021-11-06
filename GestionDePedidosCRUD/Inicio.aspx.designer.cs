@@ -663,31 +663,22 @@ namespace GestionDePedidosCRUD
         protected global::System.Web.UI.WebControls.View VistaFacturar;
 
         /// <summary>
-        /// ddlFiltrarCliente control.
+        /// ddlFiltrarEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlFiltrarCliente;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFiltrarEstado;
 
         /// <summary>
-        /// SqlDataSource9 control.
+        /// btnFiltrarFacturaXEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource9;
-
-        /// <summary>
-        /// btnFiltrarFactura control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarFactura;
+        protected global::System.Web.UI.WebControls.Button btnFiltrarFacturaXEstado;
 
         /// <summary>
         /// DataList1 control.

@@ -122,11 +122,11 @@ namespace GestionDePedidosCRUD
             txtFechaVendedor.Text = "";
         }
 
-        protected void LlenarDataList() 
+        protected void LlenarDataList()
         {
             try
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Pedido WHERE IDCliente='" + ddlFiltrarCliente.SelectedValue + "'", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Pedido WHERE Estado='" + ddlFiltrarEstado.SelectedValue + "'", conn);
                 DataSet ds = new DataSet();
                 conn.Open();
                 da.Fill(ds);
@@ -137,10 +137,10 @@ namespace GestionDePedidosCRUD
             {
                 conn.Close();
             }
-            
+
         }
 
-        protected void btnFiltrarFactura_Click(object sender, EventArgs e)
+        protected void btnFiltrarFacturaXEstado_Click(object sender, EventArgs e)
         {
             LlenarDataList();
         }
